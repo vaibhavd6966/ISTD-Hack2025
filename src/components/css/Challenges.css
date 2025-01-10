@@ -1,0 +1,111 @@
+/* General styling for challenges page */
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .challenges-container {
+    width: 80%; /* Adjust to 80% as sidebar is 20% */
+    margin-left: 20%; /* Offset the static sidebar */
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .credits {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f39c12; /* Gold color for credit coins */
+  }
+  
+  .coin-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  /* Challenges Grid */
+  .challenges-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* One card per row */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .challenge-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #222; /* Dark background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+  }
+  
+  .challenge-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .challenge-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .challenge-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Difficulty and coins in the same line */
+  .difficulty-and-coins {
+    display: flex;
+    justify-content: space-between; /* Align difficulty and coins on the same line */
+    font-size: 16px;
+    color: #bbb;
+  }
+  
+  .difficulty,
+  .coins {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .coins img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  /* Solve button style */
+  .solve-btn {
+    
+    align-self: flex-start;
+    background-color: #28a745; /* Green background */
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* margin-top: 10px; */
+    transition: background-color 0.3s;
+  }
+  
+  .solve-btn:hover {
+    background-color: #218838; /* Darker green when hovered */
+  }
+  
+  /* Ensuring the layout adjusts well */
+  @media (max-width: 768px) {
+    .challenges-grid {
+      grid-template-columns: 1fr; /* Stack cards vertically on smaller screens */
+    }
+  }
+  

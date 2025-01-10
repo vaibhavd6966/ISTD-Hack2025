@@ -1,0 +1,89 @@
+/* General Styling for the Goals Component */
+.goals-container {
+    width: 80%;
+    margin-left: 20%; /* Space for the sidebar */
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .goals-header {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .goal-setting,
+  .goal-progress,
+  .ai-recommendations,
+  .motivational-tips {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .goal-input input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .progress-bar-container {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  progress {
+    width: 100%;
+    height: 25px;
+    margin-top: 10px;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  
+  .progress-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .update-progress-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .update-progress-btn:hover {
+    background-color: #218838;
+  }
+  
+  .ai-recommendations ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .motivational-tips {
+    font-size: 18px;
+    color: #888;
+  }
+  
+  .motivational-tips p {
+    font-style: italic;
+    color: #333;
+  }
+  
